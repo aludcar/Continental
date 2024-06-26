@@ -1,0 +1,22 @@
+@import './baseLine/mixins.scss';
+@import './baseLine/variables.scss';
+@import './components/HomePage.scss';
+@import './components/modal-component.scss';
+@import './components/loaders-component.scss';
+@import './components/search-container-component.scss';
+@import './components/trip-result-component.scss';
+@import './components/passengers-container-component.scss';
+@import './components/passenger-component.scss';
+@import './components/seat-reservation-container-component.scss';
+/* @import './components/sidebar-modal-component.scss'; */
+/* @import './components/bus-draw-component.scss'; */
+@import './baseLine/variables.scss';
+
+
+/*Global*/
+.min-height-hv-100{
+    min-height: 100vh;
+}
+.main-header{
+    z-index: 2 !important;
+}

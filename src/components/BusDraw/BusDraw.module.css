@@ -1,0 +1,171 @@
+.busContainer {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.cabin {
+    height: 142px;
+    margin-bottom: -30px;
+
+}
+
+.bus {
+    padding: 5px 0 0;
+    background-color: #e2e2e2;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+.bus li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.seat {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 45px;
+    margin: 5px;
+    transition: all 0.4s ease-out;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    flex: 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.selected {
+    composes: seat;
+}
+
+.reserved {
+    composes: seat;
+    filter: opacity(0.5);
+    pointer-events: none;
+}
+
+.free {
+    composes: seat;
+    cursor: pointer;
+}
+
+.free .popoverSeat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    position: absolute;
+    background: var(--main-color-background);
+    border-radius: 5px;
+    top: -150%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    transition: all 0.4s ease-in;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+
+
+.rateTypePopoverSeat span {
+    font-size: 14px;
+    background-color: #e2e2e4;
+}
+
+.ratePopoverSeat span {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.steering {
+    composes: seat;
+    filter: opacity(0.5);
+}
+
+.bathroom {
+    composes: seat;
+    filter: opacity(0.5);
+}
+
+.passage {
+    height: 50px;
+    width: 45px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px;
+    flex: 1;
+}
+
+/**TabsComponent**/
+
+.containerTab {
+
+    display: flex;
+    padding: 15px;
+    border-bottom: solid 1px var(--main-color-box-shadow);
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.containerTab .levelTab {
+
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.activeTab {
+    border-bottom: solid var(--main-color-blue) !important;
+    color: var(--main-color-blue) !important;
+}
+
+
+.containerTabCollectionSeats {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+
+/*Add Media Query*/
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+    .cabin {
+        height: 330px;
+        margin-bottom: -65px;
+    
+    }
+    .seat {
+        height: 80px;
+    }
+  }
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .cabin {
+        height: 142px;
+        margin-bottom: -30px;
+    
+    }
+    .seat {
+        height: 50px;
+    }
+  }

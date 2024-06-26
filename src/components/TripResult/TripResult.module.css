@@ -1,0 +1,262 @@
+.tripItem {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    background-color: var(--main-color-background);
+    box-shadow: 0 3px 6px 0 var(--main-color-box-shadow);
+    z-index: 1;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 25px;
+}
+
+.tripItemRow {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.tripBusService {}
+
+.tripInformation {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.tripTimes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tripIcon {}
+
+.tripDepartureContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tripDeparture {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.tripEstimated {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+
+.tripArriveContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tripArrive {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.tripPlaces {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tripInformationServices {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+}
+
+
+.tripPrice {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.tripExtraInformation {
+    display: flex;
+    flex: 2;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.tripButtonSelectSeats {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.labelTripTimes {
+    font-size: 13px;
+}
+
+.spanTripTimeHr {
+    font-size: 24px;
+    color: var(--main-color-blue);
+}
+
+.spanTripTimePlace {
+    font-size: 16px;
+}
+
+.labelTripPrice {
+    font-size: 13px;
+}
+
+.spanTripPrice {
+    font-size: 24px;
+    color: var(--main-color-red);
+}
+
+.tripButton {
+    background: var(--main-color-red) !important;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.contractButton {
+    background: #fff !important;
+    border-radius: 10px;
+    font-size: 8px !important;
+    color: var(--main-color-gray-text) !important;
+}
+
+.contractTabsContainer {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.contractButtonContentContainer {}
+
+.titleButtonContract {}
+
+.iconButtonContract {}
+
+/*****Animations****/
+
+@-webkit-keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translatey(25px);
+        -moz-transform: translatey(25px);
+        -o-transform: translatey(25px);
+        transform: translatey(25px);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translatey(0);
+        -moz-transform: translatey(0);
+        -o-transform: translatey(0);
+        transform: translatey(0);
+    }
+}
+
+@-moz-keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translatey(25px);
+        -moz-transform: translatey(25px);
+        -o-transform: translatey(25px);
+        transform: translatey(25px);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translatey(0);
+        -moz-transform: translatey(0);
+        -o-transform: translatey(0);
+        transform: translatey(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translatey(25px);
+        -moz-transform: translatey(25px);
+        -o-transform: translatey(25px);
+        transform: translatey(25px);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translatey(0);
+        -moz-transform: translatey(0);
+        -o-transform: translatey(0);
+        transform: translatey(0);
+    }
+}
+
+.inDown {
+    -webkit-animation-name: fadeInDown;
+    -moz-animation-name: fadeInDown;
+    -o-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -o-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}
+
+/*Add Media Query*/
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .flexColumnReverse {
+        flex-direction: column-reverse !important;
+    }
+
+    .tripItemRow {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .tripInformation {
+        width: 100%;
+    }
+
+    .tripInformationServices {
+        width: 100%;
+    }
+
+    .tripPrice {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .tripIcon{
+        display: none;
+    }
+
+    .tripDeparture{
+        align-items: flex-start;
+    }
+    .tripEstimated span{
+        text-align: center;
+        font-size: 11px;
+    }
+}

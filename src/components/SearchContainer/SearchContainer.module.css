@@ -1,0 +1,187 @@
+.flexBox {
+  display: flex;
+  flex: 1;
+}
+
+.searchContainer {
+  margin: 20px 0;
+  padding: 30px 15px;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px 0 var(--main-color-box-shadow);
+  border: 0;
+  background: var(--main-color-background);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.agenciesContainer {
+  composes: flexBox;
+  flex: 3;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.agencyElement {
+  composes: flexBox;
+  flex: 7
+}
+
+.switchAgencies {
+  composes: flexBox;
+  cursor: pointer;
+}
+
+.departureDateContainer {
+  composes: flexBox;
+}
+
+.returnDateContainer {
+  composes: flexBox;
+}
+
+.passengersContainer {
+  composes: flexBox;
+}
+
+.searchButtonContainer {
+  composes: flexBox;
+}
+
+.searchButton {
+  background: var(--main-color-blue) !important;
+  border-radius: 10px;
+  font-size: 16px !important;
+  width: 100%;
+}
+
+.marginTopOver50 {
+  margin-top: -50px;
+  position: absolute;
+  z-index: 9;
+}
+
+/*****Skeleton loading****/
+.form_group_skeleton {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form_field_skeleton {
+  border-radius: 5px;
+  box-shadow: none;
+  border: 1px solid #f1f2f2;
+  padding-left: 15px;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  /*Animation*/
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderShimmer;
+  animation-timing-function: linear;
+  background-color: #f6f7f8;
+  background: linear-gradient(to right, #eeeeee 8%, #bbbbbb 18%, #eeeeee 33%);
+  background-size: 800px 104px;
+  position: relative;
+
+}
+
+.form_input_skeleton {
+  flex: 1;
+  composes: form_field_skeleton;
+}
+
+.form_select_skeleton {
+  flex: 2;
+  composes: form_field_skeleton;
+}
+
+/****Animation*/
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -800px 0
+  }
+
+  20% {
+    background-position: -500px 0;
+  }
+
+  40% {
+    background-position: 0px 0;
+  }
+
+  60% {
+    background-position: 200px 0;
+  }
+
+  80% {
+    background-position: 500px 0;
+  }
+
+  100% {
+    background-position: 800px 0
+  }
+}
+
+
+/*Add Media Query*/
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 900px) {
+
+  .marginTopOver50 {
+    margin-top: 15px;
+    position: static;
+  }
+
+  .searchContainer {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .agenciesContainer {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .agencyElement {
+    width: 100%;
+  }
+
+  .switchAgencies {
+    display: none;
+  }
+
+  .departureDateContainer {
+    width: 100%;
+  }
+
+  .returnDateContainer {
+    width: 100%;
+  }
+
+  .passengersContainer {
+    width: 100%;
+  }
+
+  /**skeleton**/
+  .form_group_skeleton{
+    flex-direction: column;
+  }
+  .form_input_skeleton,
+  .form_select_skeleton {
+    width: 100%;
+  }
+
+}

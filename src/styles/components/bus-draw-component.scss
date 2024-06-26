@@ -1,0 +1,195 @@
+.bus {
+  padding: 80px 0 0;
+  background-color: #fffff5;
+  border-radius: 10px;
+  border: 1px solid #a7a7a7;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: right 20px top 15px;
+  margin: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.bus li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.selected-seat{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 45px;
+  margin: 3px;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  flex: 4;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.reserved-seat {
+  position: relative;
+  height: 50px;
+  width: 45px;
+  margin: 3px;
+  display: inline-block;
+  vertical-align: top;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  flex: 4;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  filter: opacity(0.5);
+}
+.free-seat {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 45px;
+  margin: 3px;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  flex: 4;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.free-seat:hover {
+  .popoverSeat{
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.popoverSeat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  position: absolute;
+  background: #F7F8FE;
+  border-radius: 5px;
+  top: -150%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 0.4s ease-in;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  visibility: hidden;
+  -webkit-visibility: hidden;
+  -moz-visibility: hidden;
+  -ms-visibility: hidden;
+  -o-visibility: hidden;
+
+  .rateTypePopoverSeat span{
+    font-size: 12px;
+    background-color:#e2e2e4;
+  }
+  .ratePopoverSeat span{
+    font-size: 10px;
+    font-weight: bold;
+  }
+}
+
+.steering {
+  position: relative;
+  height: 50px;
+  width: 45px;
+  margin: 3px;
+  display: inline-block;
+  vertical-align: top;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  flex: 4;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  filter: opacity(0.5);
+}
+
+.bathroom {
+  position: relative;
+  height: 50px;
+  width: 45px;
+  margin: 3px;
+  display: inline-block;
+  vertical-align: top;
+  border: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  flex: 4;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  filter: opacity(0.5);
+}
+
+.passage {
+  height: 50px;
+  width: 45px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 5px;
+  flex: 1;
+}
+
+.seat_num {
+  line-height: 45px;
+  text-align: center;
+  font-size: 14px;
+  display: block;
+  color: #000;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.9);
+  transition: all 0.4s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+}

@@ -1,0 +1,37 @@
+.iconServicesContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+
+.iconItemUltraSmall img {
+    width: 30px;
+}
+
+
+.iconItemExtraSmall img {
+    width: 40px;
+}
+
+.iconItemSmall img {
+    width: 100px;
+}
+
+.iconItemMedium img {
+    width: 150px;
+}
+
+.iconItemLarge img {
+    width: 200px;
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .iconServicesContainer {
+        align-items: center;
+        justify-content: center;
+    }
+}

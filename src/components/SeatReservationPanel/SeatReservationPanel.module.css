@@ -1,0 +1,96 @@
+.border-top-line {
+    border-top: solid 1px var(--main-color-box-shadow);
+}
+.border-top-line:nth-child(even) {
+    padding-top: 15px;
+}
+
+
+.seatReservationPanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.seatStatusContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.seatStatusContainerImg {
+    display: flex;
+    flex-direction: column;
+    border-top: solid 1px var(--main-color-box-shadow);
+    padding-top: 15px;
+}
+
+.seatStatusContainerImg span {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.seatStatusContainerImg .seatStatusImg {
+    width: auto;
+    height: 35px;
+    gap: 10px;
+}
+
+.seatReservationContainer ul {
+    list-style: none;
+    padding: 5px 0px;
+}
+
+.seatReservationContainer ul li {
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: solid 0.65px var(--main-color-box-shadow); */
+    ;
+}
+
+.seatInfoContainer {}
+
+.seatApprovedCode {}
+
+.seatApprovedRate {}
+
+.sectionTitle {
+    font-size: 13px;
+    font-style: italic;
+}
+
+.servicesContainer {}
+
+.iconServicesContainer {
+    composes: border-top-line;
+}
+
+.selectedSeatsCollectionContainer {
+    composes: border-top-line;
+}
+
+.seatInfoInnerColumn {
+    composes: border-top-line;
+    display: flex;
+}
+
+.iconContainer {
+    display: flex;
+    flex: 1;
+}
+
+.extraInfoMod1 {
+    font-size: 16px;
+}
+
+.extraInfoMod2 {
+    font-size: 13px;
+}
+
+.extraInfoContainer {
+    display: flex;
+    flex: 6;
+    flex-direction: column;
+}

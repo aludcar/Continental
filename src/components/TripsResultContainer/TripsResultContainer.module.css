@@ -1,0 +1,70 @@
+.minHeightView{
+    min-height: 100vh;
+}
+
+/*****Skeleton loading****/
+.form_group_skeleton {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content:space-around;
+    align-items:center;
+  }
+  
+  .form_field_skeleton{
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid #f1f2f2;
+    padding-left: 15px;
+    padding: 2px 12px;
+    font-size: 10px;
+    line-height: 1.42857143;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background-color: #f6f7f8;
+    background: linear-gradient(to right, #eeeeee 8%, #bbbbbb 18%, #eeeeee 33%);
+    background-size: 800px 104px;
+    position: relative;
+  }
+  
+  .form_input_skeleton {
+    composes:form_field_skeleton;
+  }
+  
+  .form_select_skeleton {
+    composes:form_field_skeleton;
+  }
+
+  /****Animation*/
+
+@keyframes placeHolderShimmer {
+    0% {
+      background-position: -800px 0
+    }
+    20%{
+        background-position: -500px 0;
+    }
+    40%{
+        background-position: 0px 0;
+    }
+    60%{
+        background-position: 200px 0;
+    }
+    80%{
+        background-position: 500px 0;
+    }
+    100% {
+      background-position: 800px 0
+    }
+  }
+
+  /****Media***/
+  @media screen and (max-width:600px){
+    .form_input_skeleton,
+    .form_select_skeleton {
+      width: 100%;
+    }
+  }

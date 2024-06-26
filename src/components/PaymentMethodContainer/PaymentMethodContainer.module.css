@@ -1,0 +1,51 @@
+.paymentMethodContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    background-color: var(--main-color-background);
+    box-shadow: 0 3px 6px 0 var(--main-color-box-shadow);
+    z-index: 1;
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 30px 20px;
+    gap: 15px;
+}
+
+.paymentMethodContainer header{
+    margin-bottom: 30px;
+}
+.titleContainer{
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.titleContainer label{
+    color: #005ea7;
+    font-size: 13px;
+  }
+
+.bodyPaymentMethod{
+
+}
+.labelPayUContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 13px;
+}
+
+/*Add Media Query*/
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) { 
+    .labelPayUContainer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+

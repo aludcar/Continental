@@ -1,0 +1,66 @@
+.passengerItem {
+    margin-bottom: 30px;
+    background-color:var(--main-color-background);
+    box-shadow: 0 3px 6px 0 var(--main-color-box-shadow);
+    padding: 17px 0 0;
+    z-index: 1;
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 30px 20px;
+  }
+
+  .headerPassengerItem{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .titlePassengerItem{
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .titlePassengerItem label{
+    color: #005ea7;
+    font-size: 13px;
+  }
+
+  .tripTypePassengerItem{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  .tripTitleContainer{
+    display:flex;
+  }
+
+  .tripTypeTitle{
+
+  }
+  .tripSeatTitle{
+    padding-left: 2px;
+
+  }
+  .bodyPassengerItem{
+
+  }
+
+.passengerRow{
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    }
+
+    @media screen and (max-width:600px) {
+      .passengerRow{
+        flex-direction: column;
+      }
+    }

@@ -1,0 +1,157 @@
+.bookingDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    background-color: var(--main-color-background);
+    box-shadow: 0 3px 6px 0 var(--main-color-box-shadow);
+    padding: 17px 0 0;
+    z-index: 1;
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 30px 20px;
+    width: 100%;
+}
+
+.bookingTitleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color-blue) !important;
+    font-size: 13px;
+}
+
+.bodyBookingDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.itemDetailTitle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    border-bottom: solid 1px var(--main-color-box-shadow);
+    font-size: 13px;
+}
+
+.itemDetailContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.busServiceNameContainer {
+    display: flex;
+    flex: 1;
+    margin: 10px 0px;
+}
+
+.itemDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 13px;
+}
+
+.itemDetailsModifiableContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 13px;
+}
+
+.detailsModifiableContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex: 2
+}
+
+.itemDetailHourAndPriceContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    font-size: 24px;
+}
+
+.itemDetailHourContainer {
+    display: flex;
+    flex-direction: column;
+    color: var(--main-color-blue) !important;
+    font-size: 18px;
+    
+}
+
+.itemDetailsTrip {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    font-size: 16px;
+}
+
+.itemDetailsTotalPiceContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 24px;
+    border-top: solid 1px var(--main-color-box-shadow);
+    padding-top: 10px;
+}
+
+.totalPriceTitle {
+    color: var(--main-color-blue);
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.totalPriceValue {
+    color: var(--main-color-red);
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.itemDetailModifiableContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.itemDetailModifiableBtn {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.itemDetailModifiableBtn button {
+    background: var(--main-color-blue) !important;
+    border-radius: 10px;
+}
+
+.totalPriceContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.totalDiscountContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoContainer{
+    display: flex;
+    font-size: 10px;
+    color: var(--main-color-box-shadow);
+}

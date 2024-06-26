@@ -1,0 +1,150 @@
+/******General******/
+
+.conventionsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.detailsContainer {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.guideDetails,
+.guideInformation {
+    display: flex;
+    flex-direction: column;
+    background: #eaeae9;
+    flex: 1;
+    padding: 10px 25px;
+    gap: 15px;
+}
+
+.detailsCard {
+    background: #6d6e71;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    color: #fff;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.titleCard {
+    display:flex;
+    flex:1;
+}
+
+.contentCard {
+    background: #fff;
+    border-radius: 10px;
+    color: #6d6e71;
+    display: flex;
+    flex: 3;
+    min-height: 150px;
+}
+
+.contentCard ul{
+    list-style: none;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.contentCard ul li{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 15px;
+}
+
+.contentCard .content{
+    color: #005ea7;
+    text-transform: lowercase;
+}
+
+
+/******shipping status line *******/
+
+.base-timeline {
+    list-style-type: none;
+    position: relative;
+    display: block;
+    z-index: 2;
+    width: 100%;
+    padding: 0px;
+  
+}
+
+.base-timeline::before {
+      content: '';
+      width: 100%;
+      border-top: 3px solid grey;
+      display: inline-block;
+      position: absolute;
+      top: 60%;
+      z-index: -1;
+}
+
+.base-timeline--done::before{
+   border-top: 3px solid #00a775;
+}
+
+.base-timeline__item {
+      position: relative;
+      display: inline-block;
+      width: calc(100% / 4 - 25px);
+      left:2%
+}
+
+.base-timeline__item::before {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        content: ''; 
+        border-radius: 50%;
+        width: 5px;
+        height: 5px;
+        background-color: grey;
+        color: white;
+        font-weight: bold;
+        transition: all 0.6s ease-in-out;
+        box-sizing: border-box;
+}
+
+.item--active::before {
+      background-color: grey;
+      border: 2px solid;
+      border-color: grey;
+      width: 15px;
+      height: 15px;   
+}
+
+.item--active-done::before {
+      background-color: #00a775;
+      border: 2px solid;
+      border-color: #00a775;
+      width: 15px;
+      height: 15px;   
+}
+
+.base-timeline__item:last-child {
+      width: 0;
+}
+
+/* summary text is optional and can be anything */
+
+.base-timeline__summary-text {
+      position: absolute;
+      bottom: -2em;
+    }
+
+/******media******/
+
+@media screen {
+    
+}

@@ -1,0 +1,31 @@
+.couponContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+    background-color: var(--main-color-background);
+    box-shadow: 0 3px 6px 0 var(--main-color-box-shadow);
+    padding: 17px 0 0;
+    z-index: 1;
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 30px 20px;
+    width: 100%;
+}
+
+.btnCouponApply {
+    background: var(--main-color-blue) !important;
+    border-radius: 10px;
+}
+
+.labelMsgCoupon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.labelMsgCoupon label {
+    font-size: 13px;
+    color: var(--main-color-red);
+}

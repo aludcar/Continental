@@ -1,0 +1,30 @@
+.totalSeatSelectionContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.totalTitleContainer {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.totalTitle h4{
+    color: var(--main-color-blue);
+    font-size: 22px;
+    text-transform:uppercase;
+}
+
+.totalPrice h4{
+    color: var(--main-color-red);
+    font-size: 22px
+}
+
+.totalButtonContainer {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+}

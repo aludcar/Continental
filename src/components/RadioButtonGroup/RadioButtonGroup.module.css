@@ -1,0 +1,33 @@
+.RadioButtonGroupContainer {
+    display: flex;
+    padding: 20px 0 0;
+}
+
+.formGroupReverse {
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.imageBackground img {
+    padding-left: 0px;
+    margin-left: 5px;
+}
+
+.formControlNoShadows input {
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+    transition: none;
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .RadioButtonGroupContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

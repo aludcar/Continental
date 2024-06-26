@@ -1,0 +1,18 @@
+.search-container {
+  margin: 20px 0;
+  padding: 30px 15px;
+  /* border: solid 0.1rem; */
+  border-radius: 4px;
+  box-shadow: 0 3px 6px 0 #a7acc59e;
+  border: 0;
+  background: #F7F8FE;
+  .form-group {
+    label {
+      font-size: 13px;
+    }
+  }
+}
+
+.margin-top-over-50 {
+  margin-top: -50px;
+}

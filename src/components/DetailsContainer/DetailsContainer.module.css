@@ -1,0 +1,49 @@
+.detailsContainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.passengerPaymentContainer {
+    display: flex;
+    flex-grow: 2;
+    flex-direction: column;
+}
+
+.passengerPaymentContainer form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.resumeContainer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+}
+
+/*Add Media Query*/
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+    .detailsContainer{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .resumeContainer{
+        width: 100%;
+    }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .detailsContainer{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .resumeContainer{
+        width: 100%;
+    }
+}

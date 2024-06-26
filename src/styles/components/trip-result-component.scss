@@ -1,0 +1,101 @@
+.trip-item {
+  margin-bottom: 25px;
+  background-color: #F7F8FE;
+  box-shadow: 0 3px 6px 0 rgba(167, 172, 197, 0.5);
+  padding: 17px 0 0;
+  z-index: 1;
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid transparent;
+
+  &__row {
+    display: flex;
+    height: 250%;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-bottom: 15px;
+    padding-left: 23px;
+    padding-right: 23px;
+    position: relative;
+  }
+  &____bus-service{
+    display: flex;
+    justify-content:left;
+  }
+  &__left{
+    text-align:left
+  }
+  &__right{
+    text-align:right
+  }
+  &__center{
+    text-align:center
+  }
+  &__estimated::after{
+    content: "............";
+    }
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+      opacity:0;
+      -webkit-transform: translatey(25px);
+      -moz-transform: translatey(25px);
+      -o-transform: translatey(25px);
+      transform: translatey(25px);
+  }
+  to {
+      opacity:1;
+      -webkit-transform: translatey(0);
+      -moz-transform: translatey(0);
+      -o-transform: translatey(0);
+      transform: translatey(0);
+  }
+}
+@-moz-keyframes fadeInDown {
+  from {
+      opacity:0;
+      -webkit-transform: translatey(25px);
+      -moz-transform: translatey(25px);
+      -o-transform: translatey(25px);
+      transform: translatey(25px);
+  }
+  to {
+      opacity:1;
+      -webkit-transform: translatey(0);
+      -moz-transform: translatey(0);
+      -o-transform: translatey(0);
+      transform: translatey(0);
+  }
+}
+@keyframes fadeInDown {
+  from {
+      opacity:0;
+      -webkit-transform: translatey(25px);
+      -moz-transform: translatey(25px);
+      -o-transform: translatey(25px);
+      transform: translatey(25px);
+  }
+  to {
+      opacity:1;
+      -webkit-transform: translatey(0);
+      -moz-transform: translatey(0);
+      -o-transform: translatey(0);
+      transform: translatey(0);
+  }
+}
+.in-down {
+  -webkit-animation-name: fadeInDown;
+  -moz-animation-name: fadeInDown;
+  -o-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -o-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+}
+
